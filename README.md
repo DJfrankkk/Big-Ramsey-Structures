@@ -44,7 +44,7 @@ The editable manuscript and its local journal style are in [`paper/`](paper/). T
 
 ## AI-assisted research and token usage
 
-The research used **Pharos** with the model identifier **`gpt-6-astra`**, combining parallel exploration with model-based proof checking.
+This work began with a selection of the author's local research materials, supplied as background to GPT models. Building on those materials, **Pharos** with the model identifier **`gpt-6-astra`** was used for further mathematical exploration, proof development, model-based checking, and organization of the results.
 
 **All token figures below are approximate estimates reconstructed from the available research logs.** They cover the two projects associated with this paper, with runs on **8–9 October 2026**. Accounting coverage is incomplete, and the figures are rounded. All table entries are in **millions of tokens**.
 
