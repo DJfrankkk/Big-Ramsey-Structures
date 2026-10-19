@@ -24,27 +24,11 @@ This paper studies when a countable relational structure admits a single coheren
 
 The exact-degree description is an implicit minimum over self-embeddings; finding an effective enumeration remains open. The counterexample uses several relation symbols, including ordered ternary relations, and leaves the corresponding single-relation, 3-uniform hypergraph questions open.
 
-## Lean formalization
-
-The proof entry point is [`Ramsey_Problems/CombinedRamsey/Revised20261018.lean`](Ramsey_Problems/CombinedRamsey/Revised20261018.lean). Its complete local import closure, together with the axiom-checking entry point, is included: **228 Lean source files** across `CombinedRamsey`, `RelationalRamsey632`, and `Generic3Ramsey`.
-
-The project pins **Lean 4.31.0** in `lean-toolchain` and Mathlib commit `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f` in the Lake configuration. `lake-manifest.json` also pins the transitive library dependencies. Lake downloads these external libraries and their build caches.
-
-With Lean/Elan and Git installed, run from the repository root:
-
-```sh
-lake exe cache get
-lake build
-lake env lean Ramsey_Problems/CombinedRamsey/Revised20261018/Checks.lean
-```
-
-In VS Code, open the repository folder and then the proof entry point. The final command above runs the included transitive axiom check for the loaded project declarations.
-
-The editable manuscript and its local journal style are in [`paper/`](paper/). The PDF is linked at the top of this README.
-
 ## AI-assisted research and token usage
 
-This work began with a selection of the author's local research materials, supplied as background to GPT models. Building on those materials, **Pharos** with the model identifier **`gpt-6-astra`** was used for further mathematical exploration, proof development, model-based checking, and organization of the results. Before attempting Problem 6.3.2, we first worked on Problem 6.3.1. At the time, we were unaware that Problem 6.3.1 had already been solved earlier this summer, apparently because GPT-6.1 Sol had failed to identify the relevant work during its literature search. After obtaining a solution, we also asked GPT-6 Pro to solve Problem 6.3.1 independently, which it accomplished in approximately one hour. Notably, GPT-6 Pro also failed to mention that the problem had already been resolved. Consequently, the token usage reported below includes the tokens spent on solving Problem 6.3.1.
+This work began with a selection of the author's local research materials including discrete geometry and some basic Ramsey theory, supplied as background to GPT models. Building on those materials, **Pharos** with the model identifier **`gpt-6-astra`** was used for further mathematical exploration, proof development, model-based checking, and organization of the results. 
+
+Before attempting Problem 6.3.2, we first worked on Problem 6.3.1. At the time, we were unaware that Problem 6.3.1 had already been solved earlier this summer, apparently because GPT-6.1 Sol had failed to identify the relevant work during its literature search. After obtaining a solution, we also asked GPT-6 Pro to solve Problem 6.3.1 independently, which it accomplished in approximately one hour. Notably, GPT-6 Pro also failed to mention that the problem had already been resolved. Consequently, the token usage reported below includes the tokens spent on solving Problem 6.3.1.
 
 **All token figures below are approximate estimates reconstructed from the available research logs.** They cover the two projects associated with this paper, with runs on **8–9 October 2026**. Accounting coverage is incomplete, and the figures are rounded. All table entries are in **millions of tokens**.
 
@@ -71,6 +55,24 @@ All figures below are **estimated millions of tokens**, reconstructed from the a
 | **Ramsey expansion conjecture:** does every countable ultrahomogeneous structure in a finite relational language admit a finite relational expansion that remains ultrahomogeneous and has a Ramsey age? | **696.4M** | **41.9M** | Partial results under additional hypotheses were obtained; the universal conjecture was neither proved nor refuted. |
 
 The Problem 6.3.3 row refers to the same project already included in the paper's token totals above. The two later general-conjecture attempts are additional research and are outside those totals. All figures are approximate and include exploration and model-based verification.
+
+## Lean formalization
+
+The proof entry point is [`Ramsey_Problems/CombinedRamsey/Revised20261018.lean`](Ramsey_Problems/CombinedRamsey/Revised20261018.lean). Its complete local import closure, together with the axiom-checking entry point, is included: **228 Lean source files** across `CombinedRamsey`, `RelationalRamsey632`, and `Generic3Ramsey`.
+
+The project pins **Lean 4.31.0** in `lean-toolchain` and Mathlib commit `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f` in the Lake configuration. `lake-manifest.json` also pins the transitive library dependencies. Lake downloads these external libraries and their build caches.
+
+With Lean/Elan and Git installed, run from the repository root:
+
+```sh
+lake exe cache get
+lake build
+lake env lean Ramsey_Problems/CombinedRamsey/Revised20261018/Checks.lean
+```
+
+In VS Code, open the repository folder and then the proof entry point. The final command above runs the included transitive axiom check for the loaded project declarations.
+
+The editable manuscript and its local journal style are in [`paper/`](paper/). The PDF is linked at the top of this README.
 
 ## References for the problems
 
