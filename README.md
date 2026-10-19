@@ -26,7 +26,7 @@ The exact-degree description is an implicit minimum over self-embeddings; findin
 
 ## AI-assisted research and token usage
 
-This work began with a selection of the author's local research materials including discrete geometry and some basic Ramsey theory, supplied as background to GPT models. Building on those materials, **Pharos** with the model identifier **`gpt-6-astra`** was used for further mathematical exploration, proof development, model-based checking, and organization of the results. 
+This work began with a selection of the author's existing research materials, including notes on discrete geometry and elementary Ramsey theory, supplied as background to GPT models. Building on those materials, **Pharos** with the model identifier **`gpt-6-astra`** was used for further mathematical exploration, proof development, model-based checking, and organization of the results. 
 
 Before attempting Problem 6.3.2, we first worked on Problem 6.3.1. At the time, we were unaware that Problem 6.3.1 had already been solved earlier this summer, apparently because GPT-6.1 Sol had failed to identify the relevant work during its literature search. After obtaining a solution, we also asked GPT-6 Pro to solve Problem 6.3.1 independently, which it accomplished in approximately one hour. Notably, GPT-6 Pro also failed to mention that the problem had already been resolved. Consequently, the token usage reported below includes the tokens spent on solving Problem 6.3.1.
 
