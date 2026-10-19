@@ -7,8 +7,8 @@ and requires no descriptive-set-theoretic or Ramsey axiom. -/
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α : Type} [DecidableEq α] {R : α → α → Prop} (T : FiniteLevelTree α R)
 

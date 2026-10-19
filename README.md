@@ -58,7 +58,9 @@ The Problem 6.3.3 row refers to the same project already included in the paper's
 
 ## Lean formalization
 
-The proof entry point is [`Ramsey_Problems/CombinedRamsey/Revised20261018.lean`](Ramsey_Problems/CombinedRamsey/Revised20261018.lean). Its complete local import closure, together with the axiom-checking entry point, is included: **228 Lean source files** across `CombinedRamsey`, `RelationalRamsey632`, and `Generic3Ramsey`.
+The proof entry point is [`Ramsey_Problems/CombinedRamsey/Revised20261018.lean`](Ramsey_Problems/CombinedRamsey/Revised20261018.lean). Its complete local import closure, together with the axiom-checking entry point, is included: **228 Lean source files** across `CombinedRamsey`, `RelationalRamsey632`, and `RamseyCommon`, plus a `RamseyCommon.lean` import index.
+
+`RamseyCommon` contains the 16 shared tree, finite-palette, and orbit-counting modules required by the current proofs. The earlier, separate Problem 6.3.1 formalization is not included. Its main theorem was not fully formalized; the Lean verification reported here concerns the current paper's proof entry point.
 
 The project pins **Lean 4.31.0** in `lean-toolchain` and Mathlib commit `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f` in the Lake configuration. `lake-manifest.json` also pins the transitive library dependencies. Lake downloads these external libraries and their build caches.
 

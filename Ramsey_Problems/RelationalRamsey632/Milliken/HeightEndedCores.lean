@@ -4,8 +4,8 @@ import RelationalRamsey632.Milliken.HeightCanonicalAPI
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {I : Type} [Fintype I] {α : I → Type} [∀ i, DecidableEq (α i)]
 variable {R : ∀ i, α i → α i → Prop} (T : ∀ i, FiniteLevelTree (α i) (R i))

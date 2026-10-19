@@ -5,8 +5,8 @@ steps. Only prefixes ending at the current cut are processed. -/
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 namespace HeightCanonicalFusion
 

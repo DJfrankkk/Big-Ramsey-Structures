@@ -9,8 +9,8 @@ exactly `h` finite node levels in every coordinate, and no frame tail data.
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {I : Type}
 variable {α : I → Type} [∀ i, DecidableEq (α i)]

@@ -52,7 +52,7 @@ theorem support_return_map (ι : LanguageInclusion L S)
     apply Subtype.ext
     exact hact j (i.comp v) ⟨v, rfl⟩
   have hsem : Function.Semiconj typeOf (fun v => f.comp v) (π j) := hf
-  have hper := Generic3Ramsey.Palette.surjective_iterate_factorial
+  have hper := RamseyCommon.Palette.surjective_iterate_factorial
     (π j) (hsurj j) q (hq j)
   have heq : q.factorial - 1 + 1 = q.factorial :=
     Nat.sub_add_cancel (Nat.one_le_iff_ne_zero.mpr (Nat.factorial_pos q).ne')

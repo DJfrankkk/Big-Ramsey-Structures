@@ -1,10 +1,10 @@
-import Generic3Ramsey.SourceDenseSelection
+import RamseyCommon.SourceDenseSelection
 
 /-! The two-coordinate HDHL conclusion after the section-stabilization
 fusion, with the finite-coordinate selection proved in `SourceDenseSelection`.
 -/
 
-namespace Generic3Ramsey.SourceTrees.FiniteLevelTree
+namespace RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α β : Type} [DecidableEq α] [DecidableEq β]
 variable {R : α → α → Prop} {Q : β → β → Prop}
@@ -123,4 +123,4 @@ theorem stable_sections_hdhl2 (P : α → β → Prop) (hstable : S.StableSectio
   · intro u hu v hv
     exact not_not.mp (hAB u hu v hv).2
 
-end Generic3Ramsey.SourceTrees.FiniteLevelTree
+end RamseyCommon.SourceTrees.FiniteLevelTree

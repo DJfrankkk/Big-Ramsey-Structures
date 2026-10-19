@@ -1,4 +1,4 @@
-import Generic3Ramsey.SourceMatrixTrees
+import RamseyCommon.SourceMatrixTrees
 import Mathlib.Data.Finset.Union
 
 /-!
@@ -11,9 +11,9 @@ triangular-matrix strong trees are instantiated below, including a finite
 enumeration of all ambient matrix successor rows.
 -/
 
-namespace Generic3Ramsey.SourceTrees
+namespace RamseyCommon.SourceTrees
 
-open Generic3Ramsey
+open RamseyCommon
 
 def binaryWords : ℕ → Finset Word
   | 0 => {[]}
@@ -157,4 +157,4 @@ noncomputable def StrongMatrixTree.toPrefixSystem {S : StrongWordTree}
         refine ⟨M, hM, v, (mem_binaryWords _ _).mpr ?_, hpre⟩
         exact hvlen.trans (R.node_length n M hM)
 
-end Generic3Ramsey.SourceTrees
+end RamseyCommon.SourceTrees

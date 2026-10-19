@@ -135,7 +135,7 @@ theorem coarse_recurrence (ι : LanguageInclusion L S)
       intro v
       apply Subtype.ext
       exact hact j (i.comp v) ⟨v, rfl⟩
-    have hh := Generic3Ramsey.Palette.types_preserved_by_factorial_iterate
+    have hh := RamseyCommon.Palette.types_preserved_by_factorial_iterate
       typeOf (fun v => f.comp v) (π j) hf (hsurj j) q (hq j) e
     rw [← embeddingIterate_comp f e q.factorial] at hh
     exact congrArg Subtype.val hh
@@ -189,7 +189,7 @@ theorem coarse_recurrence_quantitative (ι : LanguageInclusion L S)
       intro v
       apply Subtype.ext
       exact hact j (i.comp v) ⟨v, rfl⟩
-    have hh := Generic3Ramsey.Palette.types_preserved_by_factorial_iterate
+    have hh := RamseyCommon.Palette.types_preserved_by_factorial_iterate
       typeOf (fun v => f.comp v) (π j) hf (hsurj j) q (hq j) e
     rw [← embeddingIterate_comp f e q.factorial] at hh
     exact congrArg Subtype.val hh

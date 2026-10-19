@@ -4,8 +4,8 @@ import RelationalRamsey632.Milliken.PrefixForestGraft
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {I : Type} [Fintype I] [DecidableEq I]
     {α : I → Type} [∀ i, DecidableEq (α i)]

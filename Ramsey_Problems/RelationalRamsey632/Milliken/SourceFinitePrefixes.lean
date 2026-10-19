@@ -7,8 +7,8 @@ strong-frame prefix representation, with exactly its active core. -/
 
 namespace RelationalRamsey632
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 open Source
 open Milliken
 

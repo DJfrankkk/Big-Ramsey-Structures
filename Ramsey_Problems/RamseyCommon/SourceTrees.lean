@@ -1,4 +1,4 @@
-import Generic3Ramsey.Closure
+import RamseyCommon.Closure
 import Mathlib.Data.List.GetD
 import Mathlib.Data.List.Induction
 
@@ -13,9 +13,9 @@ membership, level, prefix, bit, injectivity, and level-surjectivity properties
 are proved. No Ramsey or Milliken principle is assumed.
 -/
 
-namespace Generic3Ramsey.SourceTrees
+namespace RamseyCommon.SourceTrees
 
-open Generic3Ramsey
+open RamseyCommon
 
 /-- Actual infinite strong subtrees of the binary prefix tree. All conditions
 are expressed in terms of their nodes and ambient prefix cones. -/
@@ -175,4 +175,4 @@ theorem valuation_surjective_level (n : ℕ) (v : Word) (hv : v ∈ S.nodes n) :
 
 end StrongWordTree
 
-end Generic3Ramsey.SourceTrees
+end RamseyCommon.SourceTrees

@@ -8,8 +8,8 @@ synchronized binary somewhere-dense level-matrix consequence. -/
 namespace RelationalRamsey632.Milliken
 
 open Filter
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α β : Type} [DecidableEq α] [DecidableEq β]
     {R : α → α → Prop} {Q : β → β → Prop}

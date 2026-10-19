@@ -1,4 +1,4 @@
-import Generic3Ramsey.SourceAbstractTrees
+import RamseyCommon.SourceAbstractTrees
 import Mathlib.Data.Finset.Lattice.Fold
 
 /-! The finite synchronization core in the combinatorial HDHL2 proof.
@@ -9,7 +9,7 @@ argument: witnesses chosen successively for different second-coordinate
 cones are refined jointly so that all earlier negative incidences survive.
 -/
 
-namespace Generic3Ramsey.SourceTrees.FiniteLevelTree
+namespace RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α β : Type} [DecidableEq α] [DecidableEq β]
 variable {R : α → α → Prop} {Q : β → β → Prop}
@@ -113,4 +113,4 @@ theorem bad_coordinates_give_rectangle (P : α → β → Prop)
           intro hp
           exact hneg.2 ((hstable w u v hneg.1 hwu).mpr hp)
 
-end Generic3Ramsey.SourceTrees.FiniteLevelTree
+end RamseyCommon.SourceTrees.FiniteLevelTree

@@ -1,10 +1,10 @@
-import Generic3Ramsey.SourceTailStabilization
-import Generic3Ramsey.SourceStableSections
+import RamseyCommon.SourceTailStabilization
+import RamseyCommon.SourceStableSections
 import Mathlib.Data.Fintype.Pi
 
 /-! Countable section fusion with one common selected level sequence. -/
 
-namespace Generic3Ramsey.SourceTrees.FiniteLevelTree.SectionFusion
+namespace RamseyCommon.SourceTrees.FiniteLevelTree.SectionFusion
 
 variable {α β : Type} [DecidableEq α] [DecidableEq β]
 variable {R : α → α → Prop} {Q : β → β → Prop}
@@ -131,4 +131,4 @@ theorem fusion_stable_sections : (fusion S T P).toTree.StableSections (otherTree
   have havP := G.stable y.val hyK a haG p (by omega) v.val hvG (S.rel_trans hau huv)
   exact hauP.symm.trans havP
 
-end Generic3Ramsey.SourceTrees.FiniteLevelTree.SectionFusion
+end RamseyCommon.SourceTrees.FiniteLevelTree.SectionFusion

@@ -1,8 +1,8 @@
-import Generic3Ramsey.SourceAbstractTrees
+import RamseyCommon.SourceAbstractTrees
 
 /-! Strong-subtree data over finite-level trees and its actual induced tree. -/
 
-namespace Generic3Ramsey.SourceTrees.FiniteLevelTree
+namespace RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α : Type} [DecidableEq α] {R : α → α → Prop}
 variable (T : FiniteLevelTree α R)
@@ -124,4 +124,4 @@ theorem index_ge (n : ℕ) : n ≤ F.index n := by
 
 end StrongFrame
 
-end Generic3Ramsey.SourceTrees.FiniteLevelTree
+end RamseyCommon.SourceTrees.FiniteLevelTree

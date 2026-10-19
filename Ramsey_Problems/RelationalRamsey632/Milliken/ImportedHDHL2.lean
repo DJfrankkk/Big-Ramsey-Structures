@@ -1,12 +1,12 @@
-import Generic3Ramsey.SourceSectionFusion
-import Generic3Ramsey.SourceStableHDHL2
+import RamseyCommon.SourceSectionFusion
+import RamseyCommon.SourceStableHDHL2
 
 /-! The two-coordinate highly-dense Halpern–Läuchli argument, without a
 section-stability premise. Section fusion and its level alignment are actual
 constructions, and matrices are transported back through successor cones.
 -/
 
-namespace Generic3Ramsey.SourceTrees.FiniteLevelTree
+namespace RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α β : Type} [DecidableEq α] [DecidableEq β]
 variable {R : α → α → Prop} {Q : β → β → Prop}
@@ -105,5 +105,5 @@ theorem hdhlTwo632 (P : α → β → Prop)
   rw [hz] at hA' hB'
   exact ⟨A', B', hA', hB', hmono'⟩
 
-end Generic3Ramsey.SourceTrees.FiniteLevelTree
+end RamseyCommon.SourceTrees.FiniteLevelTree
 

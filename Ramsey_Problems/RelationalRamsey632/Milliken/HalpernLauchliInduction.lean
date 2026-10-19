@@ -2,8 +2,8 @@ import RelationalRamsey632.Milliken.FinDimension
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 /-- This is a statement about actual constructed stabilizing frames. Its
 lower-dimensional SS premise is the induction hypothesis; no Ramsey

@@ -1,5 +1,5 @@
 import RelationalRamsey632.Transfer.Source
-import Generic3Ramsey.Palette
+import RamseyCommon.Palette
 
 namespace RelationalRamsey632.Transfer
 
@@ -87,7 +87,7 @@ theorem source_canonization (ι : LanguageInclusion L S)
 /-- Actual embedding-degree bounds, parameterized by a nonnegative integer. -/
 def EmbeddingDegreeBound {A X : Type} {L : Language}
     (a : RelStructure L A) (K : RelStructure L X) (t : ℕ) : Prop :=
-  Generic3Ramsey.Palette.DegreeBound
+  RamseyCommon.Palette.DegreeBound
     (fun (g : RelEmbedding K K) (e : RelEmbedding a K) => g.comp e) t
 
 theorem source_degree_bound (ι : LanguageInclusion L S)
@@ -100,7 +100,7 @@ theorem source_degree_bound (ι : LanguageInclusion L S)
     EmbeddingDegreeBound a K (palette a K (N.pullback i)).ncard := by
   classical
   letI : Fintype (palette a K (N.pullback i)) := hfin.fintype
-  have h := Generic3Ramsey.Palette.canonicalization_degreeBound
+  have h := RamseyCommon.Palette.canonicalization_degreeBound
     (fun (g : RelEmbedding K K) (e : RelEmbedding a K) => g.comp e)
     (fun e => (⟨(N.pullback i).pullback e, ⟨e, rfl⟩⟩ : palette a K (N.pullback i)))
     (fun D _ c => source_canonization ι hN hψ i ha hfin hR D c)

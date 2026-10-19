@@ -1,4 +1,4 @@
-import Generic3Ramsey.SourceFiniteLevels
+import RamseyCommon.SourceFiniteLevels
 
 /-! Finite-level rooted trees, including whole-level restrictions.
 
@@ -7,7 +7,7 @@ It groups several old edges into each new edge and preserves every node
 on the retained levels. It is distinct from choosing a strong subtree.
 -/
 
-namespace Generic3Ramsey.SourceTrees
+namespace RamseyCommon.SourceTrees
 
 structure FiniteLevelTree (α : Type) (R : α → α → Prop) [DecidableEq α] where
   nodes : ℕ → Finset α
@@ -135,4 +135,4 @@ noncomputable def toFiniteLevelTree : FiniteLevelTree (List α) (· <+: ·) wher
 
 end StrongPrefixSystem
 
-end Generic3Ramsey.SourceTrees
+end RamseyCommon.SourceTrees

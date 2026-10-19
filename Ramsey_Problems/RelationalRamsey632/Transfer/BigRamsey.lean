@@ -55,7 +55,7 @@ theorem exact_degree_from_source_stage (ι : LanguageInclusion L S)
     apply congrArg d
     apply Subtype.ext
     exact (htypes e).symm
-  have hexact := Generic3Ramsey.Palette.exact_degree_of_canonicalization
+  have hexact := RamseyCommon.Palette.exact_degree_of_canonicalization
     (fun (g : RelEmbedding K K) (e : RelEmbedding a K) => g.comp e)
     (fun e => (⟨Y.pullback e, ⟨e, rfl⟩⟩ : palette a K Y))
     (type_coloring_surjective Y hu) hcanon

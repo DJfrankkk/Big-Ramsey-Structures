@@ -14,5 +14,5 @@ rev = "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
 [[lean_lib]]
 name = "RamseyProofs"
 srcDir = "Ramsey_Problems"
-roots = ["CombinedRamsey", "RelationalRamsey632", "Generic3Ramsey"]
-globs = ["CombinedRamsey", "CombinedRamsey.+", "RelationalRamsey632.+", "Generic3Ramsey.+"]
+roots = ["CombinedRamsey", "RelationalRamsey632", "RamseyCommon"]
+globs = ["CombinedRamsey", "CombinedRamsey.+", "RelationalRamsey632.+", "RamseyCommon", "RamseyCommon.+"]

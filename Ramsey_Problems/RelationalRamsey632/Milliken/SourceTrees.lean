@@ -1,12 +1,12 @@
 import RelationalRamsey632.Source.Successors
-import Generic3Ramsey.SourceAbstractTrees
+import RamseyCommon.SourceAbstractTrees
 
 /-! The actual arbitrary-arity valuation coordinates instantiate the
 finitely branching tree interface used by the Halpern--Läuchli proofs. -/
 
 namespace RelationalRamsey632.Source
 
-open Generic3Ramsey.SourceTrees
+open RamseyCommon.SourceTrees
 
 variable {A : ℕ → Type} [∀ j, Fintype (A j)] [∀ j, Nonempty (A j)]
 

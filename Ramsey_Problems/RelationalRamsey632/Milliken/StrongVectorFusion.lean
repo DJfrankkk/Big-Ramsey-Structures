@@ -5,8 +5,8 @@ color, construct actual strong frames on one common infinite level set. -/
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {I : Type} [Fintype I] [DecidableEq I] [Nonempty I]
     {α : I → Type} [∀ i, DecidableEq (α i)]

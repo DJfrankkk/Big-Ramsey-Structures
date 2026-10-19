@@ -58,7 +58,7 @@ theorem palette_orbit_card [Finite A]
   letI : Fintype (palette a K Y) := hfin.fintype
   letI : Fintype (automorphismGroup a) := Fintype.ofFinite _
   simpa only [Nat.card_eq_fintype_card, Set.fintypeCard_eq_ncard] using
-    Generic3Ramsey.OrbitCounting.free_action_orbit_card_div (palette_action_free Y hr)
+    RamseyCommon.OrbitCounting.free_action_orbit_card_div (palette_action_free Y hr)
 
 def Copies (a : RelStructure L A) (K : RelStructure L X) : Type :=
   Set.range (fun e : RelEmbedding a K => Set.range e)
@@ -140,7 +140,7 @@ theorem copyMap_of {a : RelStructure L A} {K : RelStructure L X}
   rfl
 
 def CopyDegreeBound (a : RelStructure L A) (K : RelStructure L X) (t : ℕ) : Prop :=
-  Generic3Ramsey.Palette.DegreeBound
+  RamseyCommon.Palette.DegreeBound
     (fun (g : RelEmbedding K K) (F : Copies a K) => copyMap g F) t
 
 def ExactCopyDegree (a : RelStructure L A) (K : RelStructure L X) (t : ℕ) : Prop :=
@@ -217,10 +217,10 @@ theorem copy_canonization {a : RelStructure L A} {K : RelStructure L X}
     intro σ e
     apply congrArg c
     exact Subtype.ext (precompose_range σ (g.comp e))
-  have hinv := Generic3Ramsey.OrbitCounting.canonical_constants_orbit_invariant
+  have hinv := RamseyCommon.OrbitCounting.canonical_constants_orbit_invariant
     typeOf color d hsurj hequiv hcopy hd
   obtain ⟨dbar, hbar⟩ :=
-    Generic3Ramsey.OrbitCounting.invariant_descends_to_orbit_quotient d hinv
+    RamseyCommon.OrbitCounting.invariant_descends_to_orbit_quotient d hinv
   refine ⟨g, dbar, ?_⟩
   intro F
   exact (hd (copyWitness F)).trans (hbar (typeOf (copyWitness F))).symm
@@ -244,7 +244,7 @@ theorem exact_copy_degree [Finite A]
   letI : Fintype (automorphismGroup a) := Fintype.ofFinite _
   let Q := MulAction.orbitRel.Quotient (automorphismGroup a) (palette a K Y)
   letI : Fintype Q := Fintype.ofFinite Q
-  have h := Generic3Ramsey.Palette.exact_degree_of_canonicalization
+  have h := RamseyCommon.Palette.exact_degree_of_canonicalization
     (fun (g : RelEmbedding K K) (F : Copies a K) => copyMap g F)
     (copyType Y) (copy_type_surjective Y hu)
     (fun D _ c => copy_canonization Y hcanon D c)

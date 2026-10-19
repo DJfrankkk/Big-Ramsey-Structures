@@ -217,6 +217,6 @@ theorem code_orbit_card {m : ℕ} (φ : X → Vertex A U) (hφ : Function.Inject
   letI := hfin.fintype
   letI := Fintype.ofFinite (Transfer.automorphismGroup a)
   simpa only [Nat.card_eq_fintype_card, Set.fintypeCard_eq_ncard] using
-    Generic3Ramsey.OrbitCounting.free_action_orbit_card_div (code_action_free φ hφ a K)
+    RamseyCommon.OrbitCounting.free_action_orbit_card_div (code_action_free φ hφ a K)
 
 end RelationalRamsey632.Intrinsic

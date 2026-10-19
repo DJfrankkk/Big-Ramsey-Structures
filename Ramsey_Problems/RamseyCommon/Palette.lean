@@ -12,7 +12,7 @@ normal-form determination, and the realization criterion are not asserted.
 Their relevant consequences appear as explicit hypotheses.
 -/
 
-namespace Generic3Ramsey.Palette
+namespace RamseyCommon.Palette
 
 open scoped BigOperators
 
@@ -216,4 +216,4 @@ theorem source_return_map_preserves
     _ = p^[n + 1] (sourceType s) := (Function.iterate_succ_apply p n _).symm
     _ = sourceType s := by rw [hperiod]; rfl
 
-end Generic3Ramsey.Palette
+end RamseyCommon.Palette

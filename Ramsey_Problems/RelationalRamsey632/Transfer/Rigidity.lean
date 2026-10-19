@@ -1,6 +1,6 @@
 import RelationalRamsey632.Transfer.Canonization
 import Mathlib.Logic.Encodable.Basic
-import Generic3Ramsey.OrbitCounting
+import RamseyCommon.OrbitCounting
 
 namespace RelationalRamsey632.Transfer
 

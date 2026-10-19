@@ -4,8 +4,8 @@ import RelationalRamsey632.Milliken.ConeTrees
 
 namespace RelationalRamsey632.Milliken.HeightFrontier
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 def appendedIndex (e : ℕ → ℕ) (h m : ℕ) (n : ℕ) : ℕ :=
   if n < h then e n else m + (n - h)
@@ -134,8 +134,8 @@ end RelationalRamsey632.Milliken.HeightFrontier
 
 namespace RelationalRamsey632.Milliken.HeightFrontier
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {I : Type} {α : I → Type} [∀ i, DecidableEq (α i)]
     {R : ∀ i, α i → α i → Prop} (T : ∀ i, FiniteLevelTree (α i) (R i))

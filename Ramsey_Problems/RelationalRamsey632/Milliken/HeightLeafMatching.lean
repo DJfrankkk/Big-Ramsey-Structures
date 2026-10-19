@@ -6,8 +6,8 @@ full Cartesian frontier tuple seen by the packed HL color. -/
 
 namespace RelationalRamsey632.Milliken.HeightLeafMatching
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α : Type} [DecidableEq α] {R : α → α → Prop}
     (T : FiniteLevelTree α R) (e f : ℕ → ℕ) (h k m : ℕ)

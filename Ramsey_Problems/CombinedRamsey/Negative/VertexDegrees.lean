@@ -62,7 +62,7 @@ theorem no_finite_embedding_degree {K : RelStructure L X}
     obtain ⟨x, hx, hi⟩ := hχ f i
     obtain ⟨e, he⟩ := vertex_extension hh ha v hv x hx
     exact ⟨e, by simpa only [RelEmbedding.comp_apply, he] using hi⟩
-  have ht := Generic3Ramsey.Palette.unavoidable_degree_lowerBound
+  have ht := RamseyCommon.Palette.unavoidable_degree_lowerBound
     (fun (f : RelEmbedding K K) (e : RelEmbedding a K) => f.comp e)
     (fun e => χ (e v)) hs hbound
   simp only [Fintype.card_fin] at ht

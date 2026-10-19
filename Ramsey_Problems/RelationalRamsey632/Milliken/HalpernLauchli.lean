@@ -1,11 +1,11 @@
 import RelationalRamsey632.Milliken.DimensionTransport
-import Generic3Ramsey.SourceColoredForests
+import RamseyCommon.SourceColoredForests
 
 namespace RelationalRamsey632.Milliken
 
 open Filter
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 def HalpernLauchliDimension (d : ℕ) : Prop :=
   ∀ (α : Fin d → Type) [∀ i, DecidableEq (α i)]

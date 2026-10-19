@@ -10,8 +10,8 @@ premises are supplied by internal proofs.
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 theorem milliken_all_heights {I : Type} [Fintype I]
     {α : I → Type} [∀ i, DecidableEq (α i)] {R : ∀ i, α i → α i → Prop}

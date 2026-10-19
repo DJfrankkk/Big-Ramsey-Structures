@@ -5,8 +5,8 @@ import RelationalRamsey632.Milliken.SectionFusionBridge
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 theorem halpernLauchli_for_fintype (hAll : ∀ d, HalpernLauchliDimension d)
     {I : Type} [Fintype I] {α : I → Type} [∀ i, DecidableEq (α i)]

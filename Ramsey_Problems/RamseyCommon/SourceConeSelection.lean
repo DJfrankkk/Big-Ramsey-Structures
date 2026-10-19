@@ -4,7 +4,7 @@ import Mathlib.Data.Finset.Insert
 /-! A finite elimination lemma used in the ultrafilter proof of the
 single-coordinate Halpern–Läuchli theorem. -/
 
-namespace Generic3Ramsey.SourceTrees
+namespace RamseyCommon.SourceTrees
 
 /-- If finitely many hereditary properties cover every point, one property
 holds on a full cone above some extension of any given point. -/
@@ -41,4 +41,4 @@ theorem finite_cone_selection {V K : Type} [Fintype K]
   · obtain ⟨k, hk⟩ := hcover v
     exact (hnone k (Finset.mem_univ k) v (href v) hk).elim
 
-end Generic3Ramsey.SourceTrees
+end RamseyCommon.SourceTrees

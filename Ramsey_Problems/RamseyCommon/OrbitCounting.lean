@@ -8,7 +8,7 @@ Rigidity, equivariance of the actual normal-form types, and canonization
 are explicit hypotheses. None is introduced as an axiom.
 -/
 
-namespace Generic3Ramsey.OrbitCounting
+namespace RamseyCommon.OrbitCounting
 
 /-- Rigidity of the expanded automorphisms forces the action on types
 to have no nontrivial point stabilizers. `ExpandedAut` can be the actual
@@ -94,4 +94,4 @@ theorem invariant_descends_to_orbit_quotient
   rw [← hg]
   exact hinvariant g q
 
-end Generic3Ramsey.OrbitCounting
+end RamseyCommon.OrbitCounting

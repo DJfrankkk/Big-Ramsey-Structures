@@ -12,7 +12,7 @@ introduced as an axiom. In particular, compression and the Ramsey theorem
 are not assumed here.
 -/
 
-namespace Generic3Ramsey
+namespace RamseyCommon
 
 abbrev Word := List Bool
 abbrev Matrix := List Word
@@ -307,4 +307,4 @@ theorem retained_singleton_iff (M : Matrix) (z : Node) :
     · exact Retained.original (by simp)
     · exact Retained.matrixHeight (Retained.original (by simp))
 
-end Generic3Ramsey
+end RamseyCommon

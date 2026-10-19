@@ -1,4 +1,4 @@
-import Generic3Ramsey.SourceTrees
+import RamseyCommon.SourceTrees
 
 /-!
 # Matrix valuations built from actual strong vector subtrees
@@ -10,9 +10,9 @@ selected entries, and injectivity are consequences, not input hypotheses.
 There is no Milliken or Ramsey axiom.
 -/
 
-namespace Generic3Ramsey.SourceTrees
+namespace RamseyCommon.SourceTrees
 
-open Generic3Ramsey
+open RamseyCommon
 
 theorem triangular_append_iff (M : Matrix) (v : Word) :
     Triangular (M ++ [v]) ↔ Triangular M ∧ v.length = M.length := by
@@ -197,4 +197,4 @@ theorem valuation_injective : Set.InjOn R.valuation {M : Matrix | Triangular M} 
 
 end StrongMatrixTree
 
-end Generic3Ramsey.SourceTrees
+end RamseyCommon.SourceTrees

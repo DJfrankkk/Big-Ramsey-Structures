@@ -1,8 +1,8 @@
-import Generic3Ramsey.SourcePrefixSystem
+import RamseyCommon.SourcePrefixSystem
 
 /-! Explicit finite enumeration of every level of an actual prefix system. -/
 
-namespace Generic3Ramsey.SourceTrees.StrongPrefixSystem
+namespace RamseyCommon.SourceTrees.StrongPrefixSystem
 
 variable {α : Type} [DecidableEq α] (S : StrongPrefixSystem α)
 
@@ -62,4 +62,4 @@ theorem nodes_finite (n : ℕ) : (S.nodes n).Finite := by
   rw [← he]
   exact (S.finiteNodes n).finite_toSet
 
-end Generic3Ramsey.SourceTrees.StrongPrefixSystem
+end RamseyCommon.SourceTrees.StrongPrefixSystem

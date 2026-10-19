@@ -7,8 +7,8 @@ chosen subfamily of last-level extensions. -/
 
 namespace RelationalRamsey632.Milliken.HeightCandidateStage
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {I : Type} {α : I → Type} [∀ i, DecidableEq (α i)]
     {R : ∀ i, α i → α i → Prop} (T : ∀ i, FiniteLevelTree (α i) (R i))

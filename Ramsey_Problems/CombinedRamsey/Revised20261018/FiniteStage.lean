@@ -187,7 +187,7 @@ theorem finite_stage [Fintype J]
     intro t ht
     have hstagefin := selected_palette_finite a N φ η j (hpos j) (hf j)
     letI := hstagefin.fintype
-    have hh := Generic3Ramsey.Palette.unavoidable_degree_lowerBound
+    have hh := RamseyCommon.Palette.unavoidable_degree_lowerBound
       (fun (g : RelEmbedding K K) (e : RelEmbedding (a j) K) => g.comp e)
       (fun e => (⟨(stage a N φ η).pullback e, ⟨e, rfl⟩⟩ :
         palette (a j) K (stage a N φ η)))

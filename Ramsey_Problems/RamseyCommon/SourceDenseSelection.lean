@@ -1,8 +1,8 @@
-import Generic3Ramsey.SourceStableSections
+import RamseyCommon.SourceStableSections
 
 /-! Finite minimal-coordinate selection in the original HDHL2 argument. -/
 
-namespace Generic3Ramsey.SourceTrees.FiniteLevelTree
+namespace RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α β : Type} [DecidableEq α] [DecidableEq β]
 variable {R : α → α → Prop} {Q : β → β → Prop}
@@ -144,4 +144,4 @@ theorem stable_sections_dense_good_family (P : α → β → Prop)
   · intro u hu v hv
     exact (hAB u (Finset.mem_filter.mp hu).1 v hv).2
 
-end Generic3Ramsey.SourceTrees.FiniteLevelTree
+end RamseyCommon.SourceTrees.FiniteLevelTree

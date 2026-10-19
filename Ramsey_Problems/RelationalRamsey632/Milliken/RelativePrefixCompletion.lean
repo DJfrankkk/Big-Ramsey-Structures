@@ -6,8 +6,8 @@ actual ambient successor cones, rather than assumed from set inclusion. -/
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 variable {α : Type} [DecidableEq α] {R : α → α → Prop}
     {T : FiniteLevelTree α R} (F G : T.StrongFrame)

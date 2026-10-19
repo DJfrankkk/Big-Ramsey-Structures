@@ -1,9 +1,9 @@
-import Generic3Ramsey.SourceColoredForests
-import Generic3Ramsey.SourceStrongFrames
+import RamseyCommon.SourceColoredForests
+import RamseyCommon.SourceStrongFrames
 
 /-! Root-preserving tail stabilization for one finite coloring. -/
 
-namespace Generic3Ramsey.SourceTrees.FiniteLevelTree
+namespace RamseyCommon.SourceTrees.FiniteLevelTree
 
 open Filter
 
@@ -256,4 +256,4 @@ theorem tail_stabilization_exists (c : α → K) (m : ℕ) :
   · intro u hu n hn v hv huv
     exact D.color_stable hU u hu n hn v hv huv
 
-end Generic3Ramsey.SourceTrees.FiniteLevelTree
+end RamseyCommon.SourceTrees.FiniteLevelTree

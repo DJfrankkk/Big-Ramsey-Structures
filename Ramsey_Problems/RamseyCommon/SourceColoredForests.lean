@@ -1,5 +1,5 @@
-import Generic3Ramsey.SourceAbstractTrees
-import Generic3Ramsey.SourceConeSelection
+import RamseyCommon.SourceAbstractTrees
+import RamseyCommon.SourceConeSelection
 import Mathlib.Order.Filter.Ultrafilter.Basic
 import Mathlib.Order.Filter.AtTopBot.Basic
 import Mathlib.Order.Filter.Finite
@@ -9,7 +9,7 @@ import Mathlib.Order.Monotone.Basic
 The common level is selected from one free ultrafilter, so independently
 chosen component colors cause no synchronization assumption. -/
 
-namespace Generic3Ramsey.SourceTrees.FiniteLevelTree
+namespace RamseyCommon.SourceTrees.FiniteLevelTree
 
 open Filter
 
@@ -237,4 +237,4 @@ theorem stages_successor (initial : D.Stage) (hU : (U : Filter ℕ) ≤ atTop)
 
 end ColorRoots
 
-end Generic3Ramsey.SourceTrees.FiniteLevelTree
+end RamseyCommon.SourceTrees.FiniteLevelTree

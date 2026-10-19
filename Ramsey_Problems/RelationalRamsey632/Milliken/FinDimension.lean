@@ -2,8 +2,8 @@ import RelationalRamsey632.Milliken.HalpernLauchli
 
 namespace RelationalRamsey632.Milliken
 
-open Generic3Ramsey.SourceTrees
-open Generic3Ramsey.SourceTrees.FiniteLevelTree
+open RamseyCommon.SourceTrees
+open RamseyCommon.SourceTrees.FiniteLevelTree
 
 /-- A genuine d-coordinate rectangle times its last-coordinate family
 is a genuine (d+1)-coordinate matrix. The coordinate split is bijective,

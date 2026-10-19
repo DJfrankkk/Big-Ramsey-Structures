@@ -35,10 +35,10 @@ run_cmd do
     let revision := (`CombinedRamsey.Revised20261018).isPrefixOf name ||
       printable.startsWith "_private.CombinedRamsey.Revised20261018."
     let project := (`CombinedRamsey).isPrefixOf name ||
-      (`RelationalRamsey632).isPrefixOf name || (`Generic3Ramsey).isPrefixOf name ||
+      (`RelationalRamsey632).isPrefixOf name || (`RamseyCommon).isPrefixOf name ||
       printable.startsWith "_private.CombinedRamsey." ||
       printable.startsWith "_private.RelationalRamsey632." ||
-      printable.startsWith "_private.Generic3Ramsey."
+      printable.startsWith "_private.RamseyCommon."
     if project then
       if revision then
         revisionDeclarations := revisionDeclarations + 1
